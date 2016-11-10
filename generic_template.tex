@@ -1,0 +1,121 @@
+%!TEX program=lualatex
+%
+%
+%
+
+\documentclass[12pt,titlepage]{article}
+
+\usepackage[american]{babel}
+\usepackage{luatextra} % also loads fixltx2e, fontspec, xunicode
+\usepackage{mathtools}
+\usepackage{etoolbox}
+\usepackage{amsmath}
+\usepackage{unicode-math}
+%\usepackage{luainputenc}
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+\usepackage{lineno}
+
+\usepackage[doublespacing]{setspace}
+\setmainfont{TeX Gyre Pagella}
+\setmathfont{TeX Gyre Pagella Math}
+
+\usepackage[letterpaper,margin=1in]{geometry}
+
+
+\usepackage{pdflscape}
+
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
+\usepackage{dblfloatfix}
+
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{array}
+\usepackage{blindtext}
+
+\usepackage{abstract} % Allows abstract customization
+%\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+%\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{natbib}
+\usepackage{enumitem}
+
+\usepackage{url}
+\urlstyle{same}
+
+\graphicspath{{Figures/}}
+
+
+\begin{document}
+\linenumbers
+
+\title{Paper title}
+
+\author{Tara N.\ Furstenau and Corresponding Author\textsuperscript{*}\\
+School of Informatics, Computing, and Cyber Systems\\ Northern Arizona University, Flagstaff, AZ 86011 USA\\
+\texttt{\textsuperscript{*}correspondingauthor@email.com}}
+
+
+\date{}
+
+\maketitle % Insert title
+
+
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+\newpage
+\begin{abstract}\noindent%
+Abstract text
+\end{abstract}
+
+
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+%---------INTRODUCTION-------------------------------------------------------------------
+\newpage
+\section{Introduction}
+
+
+
+%----------METHODS-----------------------------------------------------------------------
+
+\section{Methods}
+\subsection{subsection}
+
+
+%----------RESULTS-----------------------------------------------------------------------
+
+\section{Results}
+
+%----------DISCUSSION--------------------------------------------------------------------
+
+\section{Discussion}
+
+
+%%----------MISC. SECTIONS----------------------------------------------------------------
+
+\section{Data Accessibility}
+
+
+
+\section{Acknowledgments}
+
+
+
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
+
+%\bibliographystyle{apalike}
+
+%\bibliography{name_of_bib_file}
+
+
+
+\end{document}
